@@ -18,8 +18,11 @@ cargo build
 
 ``` 
 
-- **compile c program with  :** 
-```gcc -g call_rust.c -o call_rust  -lrustcalls -L./../target/debug -Wl,-rpath=./../target/debug```
+- **compile c program with  :**   
+```
+gcc -g call_rust.c -o call_rust  -lrustcalls -L./../target/debug -Wl,-rpath=./../target/debug
+
+```
 
 
 # lib.rs 
