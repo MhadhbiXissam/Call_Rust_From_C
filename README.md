@@ -206,7 +206,18 @@ int main() {
 
 ```
 
+# library from rust can called dierctly to nim : 
+- **Exmaple code nim** :       
+```
+const libName* = "full path to ............. librustcalls.so"
 
+proc rust_int*(flags: int32)  : cint {.importc: "rust_int", dynlib: libName.}
+
+proc rust_void*(flags: pointer)  : cint {.importc: "rust_void", dynlib: libName.}
+
+echo rust_int(16)
+
+```
 
 
 
