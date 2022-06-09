@@ -25,7 +25,7 @@ gcc -g call_rust.c -o call_rust  -lrustcalls -L./../target/debug -Wl,-rpath=./..
 ```
 
 
-# lib.rs 
+# src/lib.rs 
 ```
 use std::ffi::{c_void, CStr};
 use std::os::raw::c_char;
@@ -124,7 +124,7 @@ pub unsafe extern "C" fn rust_cstruct(c_struct: *mut RustStruct) {
 ```
 
 
-# call_rust.c : 
+# src/call_rust.c : 
 
 ```
 
