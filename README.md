@@ -3,8 +3,8 @@ example to call rust from c , tested under linux mint 64bit
 
 
 # how  : 
-- **create cargo pkg :** 
-	cargo new rustcalls --lib
+- **create cargo pkg :**  
+```cargo new rustcalls --lib```
 
 - **add to toml  :** 
 ```
